@@ -1,1 +1,1 @@
-# 8-Bit-Computer-Programmer
+# 8-Bit Computer Programmer
