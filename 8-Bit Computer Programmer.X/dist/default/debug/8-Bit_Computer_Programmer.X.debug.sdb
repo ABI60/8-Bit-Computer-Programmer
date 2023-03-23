@@ -1,0 +1,344 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1826 ]
+[d frameptr 6 ]
+"8 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\ADC_init.c
+[v _ADC_init ADC_init `(v  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"8 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\check_cks.c
+[v _check_cks check_cks `(uc  1 e 1 0 ]
+"28 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"126
+[v _ISR ISR `II(v  1 e 1 0 ]
+"14 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\programmer_init.c
+[v _programmer_init programmer_init `(v  1 e 1 0 ]
+"12 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\SR_write40.c
+[v _SR_write40 SR_write40 `(v  1 e 1 0 ]
+"15 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\TMR1_init.c
+[v _TMR1_init TMR1_init `(v  1 e 1 0 ]
+"15 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\TMR2_init.c
+[v _TMR2_init TMR2_init `(v  1 e 1 0 ]
+"13 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\UART_init.c
+[v _UART_init UART_init `(v  1 e 1 0 ]
+"11 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\UART_receive_error_check.c
+[v _UART_receive_error_check UART_receive_error_check `(uc  1 e 1 0 ]
+"9 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\UART_send.c
+[v _UART_send UART_send `(v  1 e 1 0 ]
+[s S138 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"375 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1826.h
+[s S147 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S152 . 1 `S138 1 . 1 0 `S147 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES152  1 e 1 @11 ]
+[s S170 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"571
+[u S179 . 1 `S170 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES179  1 e 1 @17 ]
+"688
+[v _TMR1L TMR1L `VEuc  1 e 1 @22 ]
+"708
+[v _TMR1H TMR1H `VEuc  1 e 1 @23 ]
+"728
+[v _T1CON T1CON `VEuc  1 e 1 @24 ]
+[s S719 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+"750
+[s S728 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+[u S732 . 1 `S719 1 . 1 0 `S728 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES732  1 e 1 @24 ]
+"910
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+[s S546 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+"931
+[s S554 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+[u S558 . 1 `S546 1 . 1 0 `S554 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES558  1 e 1 @28 ]
+[s S650 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"1098
+[u S659 . 1 `S650 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES659  1 e 1 @140 ]
+[s S309 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1160
+[u S318 . 1 `S309 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES318  1 e 1 @141 ]
+[s S191 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1222
+[u S200 . 1 `S191 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES200  1 e 1 @145 ]
+"1724
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"1744
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S31 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+"1769
+[s S39 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+[s S43 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S46 . 1 `S31 1 . 1 0 `S39 1 . 1 0 `S43 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES46  1 e 1 @157 ]
+"1824
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+[s S75 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"1913
+[u S84 . 1 `S75 1 . 1 0 ]
+[v _LATAbits LATAbits `VES84  1 e 1 @268 ]
+[s S525 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"1970
+[u S534 . 1 `S525 1 . 1 0 ]
+[v _LATBbits LATBbits `VES534  1 e 1 @269 ]
+[s S283 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ANSB1 1 0 :1:1 
+`uc 1 ANSB2 1 0 :1:2 
+`uc 1 ANSB3 1 0 :1:3 
+`uc 1 ANSB4 1 0 :1:4 
+`uc 1 ANSB5 1 0 :1:5 
+`uc 1 ANSB6 1 0 :1:6 
+`uc 1 ANSB7 1 0 :1:7 
+]
+"2779
+[s S292 . 1 `uc 1 ANSELB 1 0 :8:0 
+]
+[u S294 . 1 `S283 1 . 1 0 `S292 1 . 1 0 ]
+[v _ANSELBbits ANSELBbits `VES294  1 e 1 @397 ]
+"3018
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"3038
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"3070
+[v _SPBRG SPBRG `VEuc  1 e 1 @411 ]
+"3157
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+[s S444 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3174
+[u S453 . 1 `S444 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES453  1 e 1 @413 ]
+"3219
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+[s S412 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3236
+[u S421 . 1 `S412 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES421  1 e 1 @414 ]
+[s S332 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"3298
+[u S341 . 1 `S332 1 . 1 0 ]
+[v _BAUDCONbits BAUDCONbits `VES341  1 e 1 @415 ]
+"12 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\main.c
+[v _MENU_programmer_mode MENU_programmer_mode `VEuc  1 s 1 MENU_programmer_mode ]
+"13
+[v _MENU_f_first_entrance MENU_f_first_entrance `VEuc  1 s 1 MENU_f_first_entrance ]
+"15
+[v _f_packet_complete f_packet_complete `VEuc  1 s 1 f_packet_complete ]
+"16
+[v _f_receive_problem f_receive_problem `VEuc  1 s 1 f_receive_problem ]
+"18
+[v _f_blink_red f_blink_red `VEuc  1 s 1 f_blink_red ]
+"19
+[v _f_blink_orange f_blink_orange `VEuc  1 s 1 f_blink_orange ]
+"20
+[v _f_blink_green f_blink_green `VEuc  1 s 1 f_blink_green ]
+"6 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\TMR1_init.c
+[v _TMR1_counter TMR1_counter `uc  1 e 1 0 ]
+"6 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\TMR2_init.c
+[v _TMR2_counter TMR2_counter `uc  1 e 1 0 ]
+"6 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\UART_init.c
+[v _UART_receive_buffer UART_receive_buffer `VE[4]uc  1 e 4 0 ]
+"7
+[v _UART_receive_pointer UART_receive_pointer `uc  1 e 1 0 ]
+"28 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"123
+} 0
+"14 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\programmer_init.c
+[v _programmer_init programmer_init `(v  1 e 1 0 ]
+{
+"52
+} 0
+"13 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\UART_init.c
+[v _UART_init UART_init `(v  1 e 1 0 ]
+{
+"58
+} 0
+"15 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\TMR2_init.c
+[v _TMR2_init TMR2_init `(v  1 e 1 0 ]
+{
+"29
+} 0
+"15 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\TMR1_init.c
+[v _TMR1_init TMR1_init `(v  1 e 1 0 ]
+{
+"35
+} 0
+"8 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\ADC_init.c
+[v _ADC_init ADC_init `(v  1 e 1 0 ]
+{
+"26
+} 0
+"9 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\UART_send.c
+[v _UART_send UART_send `(v  1 e 1 0 ]
+{
+[v UART_send@data data `uc  1 a 1 wreg ]
+[v UART_send@data data `uc  1 a 1 wreg ]
+[v UART_send@data data `uc  1 a 1 0 ]
+"16
+} 0
+"12 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\SR_write40.c
+[v _SR_write40 SR_write40 `(v  1 e 1 0 ]
+{
+[v SR_write40@command command `uc  1 a 1 wreg ]
+"29
+[v SR_write40@i_134 i `uc  1 a 1 9 ]
+"22
+[v SR_write40@i_133 i `uc  1 a 1 8 ]
+"15
+[v SR_write40@i i `uc  1 a 1 7 ]
+"12
+[v SR_write40@command command `uc  1 a 1 wreg ]
+[v SR_write40@data data `us  1 p 2 0 ]
+[v SR_write40@address address `us  1 p 2 2 ]
+"15
+[v SR_write40@command command `uc  1 a 1 6 ]
+"37
+} 0
+"126 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\main.c
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"204
+} 0
+"8 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\check_cks.c
+[v _check_cks check_cks `(uc  1 e 1 0 ]
+{
+"12
+[v check_cks@i i `uc  1 a 1 6 ]
+"11
+[v check_cks@result result `us  1 a 2 4 ]
+"22
+} 0
+"11 C:\Users\ABI\Desktop\8-Bit Computer Programmer\8-Bit Computer Programmer.X\UART_receive_error_check.c
+[v _UART_receive_error_check UART_receive_error_check `(uc  1 e 1 0 ]
+{
+"28
+} 0
